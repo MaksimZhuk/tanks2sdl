@@ -25,7 +25,7 @@ void Graphics::instal_sdl()
 	}
 	int request = SDL_GetDesktopDisplayMode(0,&displayMode);
 
-	win = SDL_CreateWindow("Tanks!", 20, 35, X_disp, Y_disp, SDL_WINDOW_SHOWN);
+	win = SDL_CreateWindow("Tanks!", 340, 35, X_disp, Y_disp, SDL_WINDOW_SHOWN);
 	if (win == nullptr){
 		std::cout << "SDL_CreateWindow Error: " << SDL_GetError() << std::endl;
 		exit(-1);

@@ -63,8 +63,8 @@ bool bullets::strike(list<StaticTextures*> * tex, list<tanks*> * t)//,	list<tank
 
 			if ( ((Rect.x>(*i)->Rect.x-2) && (Rect.x<(*i)->Rect.x+text_W+2)) && ((Rect.y+bullet_H-2>(*i)->Rect.y-2) && (Rect.y+bullet_H-2<(*i)->Rect.y+text_H+2)) )
 			{
-				(*i)->health-=4;
-				if ((*i)->health<10) (*i)->Texture=IMG_LoadTexture(ren,"image/block_9_1.png");
+				if ((*i)->health < 100) (*i)->health-=5;
+				if ((*i)->health<11) (*i)->Texture=IMG_LoadTexture(ren,"image/block_9_1.png");
 				if ((*i)->health<7) (*i)->Texture=IMG_LoadTexture(ren,"image/block_9_2.png");
 				return true;
 			}

@@ -6,10 +6,13 @@
 #include "hero.h"
 #include "bottanks.h"
 #include "Game.h"
+#include "SDL_ttf.h"
 												
 SDL_Renderer *ren; //рендер										
 list<bullets*> b;
-//list<tanks*> t;
+list<StaticTextures*> tex;
+list<tanks*> t;
+int Hero_X = 370, Hero_Y = 500;
 
 
 
@@ -26,6 +29,7 @@ int main(int argc, char* args[])
 	SDL_DestroyRenderer(ren);
 	SDL_DestroyWindow(grafika.win);
 	SDL_Quit();
+	TTF_Quit();
 
 	return 0;
 }
