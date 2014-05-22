@@ -14,7 +14,7 @@ protected:
 	void explosion(); //взрыыыыыыв
 	double t0;
 public:
-	void bottanks_step();
+	//void bottanks_step();
 	bool am_i_dead(); // вернёт true если здороья ноль или меньше, в остальных false
 	bool moveTo(char dir); //отвечает за движение
 	bool moveCheck(char dir); // проверяет можно ли ехать в этом направлении

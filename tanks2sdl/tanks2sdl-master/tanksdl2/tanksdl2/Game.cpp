@@ -84,7 +84,7 @@ void game(Graphics* grafika)
 	bool dead_status = false; //станет тру, если сдох
 	//
 	
-	start_screen(&event, &quit);
+	start_screen(&event, &quit, &dead_status);
 
 	while(!quit) //бесконечный цикл обработки событий
 	{

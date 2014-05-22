@@ -1,10 +1,26 @@
-﻿Построение начато 20.05.2014 22:35:46.
-     1>Проект "C:\Users\Максим\Downloads\tanks2sdl_ver-3\tanks2sdl-master\tanks2sdl-master\tanks2sdl\tanks2sdl-master\tanksdl2\tanksdl2\tanksdl2.vcxproj" в узле 2 (целевые объекты Build).
+﻿Построение начато 22.05.2014 0:09:00.
+     1>Проект "C:\Users\Максим\Documents\Projects\tanksdl2_rar\tanksdl2\tanksdl2\tanksdl2.vcxproj" в узле 2 (целевые объекты Build).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp Level.cpp bottanks.cpp bullets.cpp hero.cpp main.cpp tanks.cpp
+         tanks.cpp
+     1>c:\users\максим\documents\projects\tanksdl2_rar\tanksdl2\tanksdl2\tanks.cpp(46): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\максим\documents\projects\tanksdl2_rar\tanksdl2\tanksdl2\tanks.cpp(51): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\максим\documents\projects\tanksdl2_rar\tanksdl2\tanksdl2\tanks.cpp(52): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\максим\documents\projects\tanksdl2_rar\tanksdl2\tanksdl2\tanks.cpp(56): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\максим\documents\projects\tanksdl2_rar\tanksdl2\tanksdl2\tanks.cpp(57): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\максим\documents\projects\tanksdl2_rar\tanksdl2\tanksdl2\tanks.cpp(62): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+         bottanks.cpp
+         Level.cpp
+         Создание кода...
+     1>c:\users\максим\documents\projects\tanksdl2_rar\tanksdl2\tanksdl2\tanks.cpp(65): warning C4701: использована потенциально неинициализированная локальная переменная "xb"
+     1>c:\users\максим\documents\projects\tanksdl2_rar\tanksdl2\tanksdl2\tanks.cpp(65): warning C4701: использована потенциально неинициализированная локальная переменная "yb"
+         Пропуск... (изменения не обнаружены)
+         main.cpp
+         hero.cpp
+         bullets.cpp
          Game.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Максим\Downloads\tanks2sdl_ver-3\tanks2sdl-master\tanks2sdl-master\tanks2sdl\tanks2sdl-master\tanksdl2\Debug\tanksdl2.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib SDL2test.lib SDL2_image.lib SDL2_mixer.lib SDL2_ttf.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Максим\Downloads\tanks2sdl_ver-3\tanks2sdl-master\tanks2sdl-master\tanks2sdl\tanks2sdl-master\tanksdl2\Debug\tanksdl2.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Максим\Downloads\tanks2sdl_ver-3\tanks2sdl-master\tanks2sdl-master\tanks2sdl\tanks2sdl-master\tanksdl2\Debug\tanksdl2.lib" /MACHINE:X86 Debug\bottanks.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Максим\Documents\Projects\tanksdl2_rar\tanksdl2\Debug\tanksdl2.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib SDL2test.lib SDL2_image.lib SDL2_mixer.lib SDL2_ttf.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Максим\Documents\Projects\tanksdl2_rar\tanksdl2\Debug\tanksdl2.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Максим\Documents\Projects\tanksdl2_rar\tanksdl2\Debug\tanksdl2.lib" /MACHINE:X86 Debug\bottanks.obj
          Debug\bullets.obj
          Debug\Game.obj
          Debug\Graphics.obj
@@ -16,9 +32,9 @@
          Debug\StaticTextures.obj
          Debug\tanks.obj
          Debug\Text.obj
-         tanksdl2.vcxproj -> C:\Users\Максим\Downloads\tanks2sdl_ver-3\tanks2sdl-master\tanks2sdl-master\tanks2sdl\tanks2sdl-master\tanksdl2\Debug\tanksdl2.exe
-     1>Построение проекта "C:\Users\Максим\Downloads\tanks2sdl_ver-3\tanks2sdl-master\tanks2sdl-master\tanks2sdl\tanks2sdl-master\tanksdl2\tanksdl2\tanksdl2.vcxproj" завершено (целевые объекты Build).
+         tanksdl2.vcxproj -> C:\Users\Максим\Documents\Projects\tanksdl2_rar\tanksdl2\Debug\tanksdl2.exe
+     1>Построение проекта "C:\Users\Максим\Documents\Projects\tanksdl2_rar\tanksdl2\tanksdl2\tanksdl2.vcxproj" завершено (целевые объекты Build).
 
 Построение успешно завершено.
 
-Затраченное время: 00:00:02.11
+Затраченное время: 00:00:06.20

@@ -41,7 +41,7 @@ void draw_message(TTF_Font* font, const char* a, int x, int y, int size)
 	SDL_RenderCopy(ren, Message, NULL, &Message_rect);
 }
 
-void start_screen(SDL_Event* events, bool* quit)
+void start_screen(SDL_Event* events, bool* quit,bool* status)
 {
 	instal_text_mode();
 	TTF_Font* font=load();
@@ -61,6 +61,7 @@ void start_screen(SDL_Event* events, bool* quit)
 			if ( ( (events->button.x>X_disp/2-100) && (events->button.x<X_disp/2+4*30*2-100) ) && ( (events->button.y>Y_disp/2+100) && (events->button.y<Y_disp/2+30*2+100) ) )
 			{
 				*quit=true;
+				*status=true;
 				break;
 			}
 

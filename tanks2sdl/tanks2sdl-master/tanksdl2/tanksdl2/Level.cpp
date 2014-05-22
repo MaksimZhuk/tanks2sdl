@@ -62,9 +62,9 @@ void Level::add_tanks()
 	for(list<resp*>::iterator i=respawn.begin(); i!=respawn.end(); i++)
 		{
 		if ((*i)->type==1)
-			t.push_back(new bottanks(10, 3, (rand() % 4)*90, IMG_LoadTexture(ren, "image/battlecity_enemy1.png"), tank_H, tank_W, (*i)->respawn.x, (*i)->respawn.y));
+			t.push_back(new bottanks(10, 2, (rand() % 4)*90, IMG_LoadTexture(ren, "image/battlecity_enemy1.png"), tank_H, tank_W, (*i)->respawn.x, (*i)->respawn.y));
 		if ((*i)->type==2)
-			t.push_back(new bottanks(10, 6, (rand() % 4)*90, IMG_LoadTexture(ren, "image/battlecity_enemy2.png"), tank_H, tank_W, (*i)->respawn.x, (*i)->respawn.y));
+			t.push_back(new bottanks(10, 4, (rand() % 4)*90, IMG_LoadTexture(ren, "image/battlecity_enemy2.png"), tank_H, tank_W, (*i)->respawn.x, (*i)->respawn.y));
 		}
 	}
 
@@ -101,7 +101,7 @@ void Level::watch_tanks()
 {
 	list<tanks*>::iterator k = t.begin();
 	
-	(*k)->bottanks_step();	
+	bottanks::bottanks_step();	
 
 	for(list<tanks*>::iterator i=t.begin(); i!=t.end(); i++)
 	{

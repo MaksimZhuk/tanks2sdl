@@ -8,6 +8,7 @@ protected:
 
 	void randmove(); //тестовая функция движения и ведения огня
 public:
+	static void bottanks_step();
 	void Draw();
 	bottanks(int _he, int _s, int _a,SDL_Texture* _Texture,int _h,int _w, int _x, int _y);
 	~bottanks(void);
